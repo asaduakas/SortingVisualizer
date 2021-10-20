@@ -1,0 +1,76 @@
+body{
+    background-color: #261C2C;
+}
+
+label {
+    font: 1rem 'Fira Sans', futura;
+    color: beige;
+}
+
+input {
+    margin: .4rem;
+}
+
+select{
+    font: 1rem 'Fira Sans', futura;
+    text-align: center;
+}
+
+
+html,body {padding:0; margin:0;}
+
+#toolbar{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #3E2C41;
+    align-items: center;
+    justify-content: center;
+}
+
+#bodyContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.slot{
+    display: flex;
+    padding: 10px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrElement{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 136, 0);
+    margin-left: 4px;
+    font: 1rem 'Fira Sans', futura;
+    color: white;
+}
+
+.bn {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid #ffffff;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font: 1rem 'Fira Sans', futura;
+    color: white;
+    text-emphasis-color: white;
+    text-decoration-color: white;
+    background-color: #3E2C41;
+    outline-color: white;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255);
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .bn:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+  }

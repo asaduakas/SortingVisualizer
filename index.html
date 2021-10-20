@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <div class="slot">
+            <label for="size">ARRAY SIZE AND SORTING SPEED:</label>
+            <input type="range" id="slider" name="slider" min="4" max="200" oninput="generateArray(this.value)" onchange="generateArray(this.value)">
+        </div>
+        <div class="slot">
+            <button class="bn" onclick="generateArray(slider.value)">Generate Random Array</button>
+        </div>
+        <div class="slot">
+            <select id = "select">
+                <option value="" disabled selected>SELECT ALGORITHM</option>
+                <option value="bubble">BUBBLE SORT</option>
+                <option value="heap">HEAP SORT</option>
+                <option value="quick">QUICK SORT</option>
+            </select>
+        </div>
+        <div class="slot">
+            <button id = "sortBtn" class="bn">Sort</button>
+        </div>
+    </div>
+    
+    <div id="bodyContainer">
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
