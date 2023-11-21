@@ -10,7 +10,7 @@ Welcome to the Sorting Algorithms Visualizer! This project was created as a fun 
 - Responsive design for a wide range of devices.
 
 ## Demo Video
-
+![](https://github.com/asaduakas/SortingVisualizer/blob/main/SortingViz.gif)
 
 ## Technologies Used
 - HTML
