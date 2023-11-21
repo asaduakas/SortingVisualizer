@@ -1,9 +1,12 @@
-body{
-    background-color: #261C2C;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #0c0f0a;
+    font-family: 'Roboto', sans-serif; 
+    color: #EDEDED;
 }
 
 label {
-    font: 1rem 'Fira Sans', futura;
     color: beige;
 }
 
@@ -12,25 +15,33 @@ input {
 }
 
 select{
-    font: 1rem 'Fira Sans', futura;
     text-align: center;
 }
 
 
-html,body {padding:0; margin:0;}
-
-#toolbar{
+html,body {
+    height: 100%; /* Ensure full height */
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: 100%;
-    height: 100px;
-    background-color: #3E2C41;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stack elements in a column */
+}
+
+/* Responsive Grid Layout */
+#toolbar{
+    display: grid;
+    background-color: #fdc500;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    height: fit-content;
 }
 
 #bodyContainer{
+    flex-grow: 1; /* Take up remaining space */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     text-align: center;
 }
 
@@ -52,25 +63,71 @@ html,body {padding:0; margin:0;}
 }
 
 .bn {
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid #ffffff;
-    border-radius: 2em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font: 1rem 'Fira Sans', futura;
-    color: white;
-    text-emphasis-color: white;
-    text-decoration-color: white;
-    background-color: #3E2C41;
-    outline-color: white;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255);
-    text-align: center;
-    transition: all 0.2s;
-  }
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0.8em 2em; /* Increase padding */
+    background-color: #fbfbf2;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
   
-  .bn:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
+.bn:hover {
+    background-color: #5E4A6A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+  /* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3E2C41;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    #toolbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .slot {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #toolbar {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3E2C41;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
