@@ -1,5 +1,8 @@
 # Sorting Algorithms Visualizer
 
+##Try it here!
+https://asaduakas.github.io/SortingVisualizer/
+
 ## Introduction
 Welcome to the Sorting Algorithms Visualizer! This project was created as a fun and educational exercise to refresh and demonstrate fundamental concepts in algorithm design and implementation. The visualizer provides an interactive way to see how different sorting algorithms work and how they compare in terms of efficiency and performance.
 
