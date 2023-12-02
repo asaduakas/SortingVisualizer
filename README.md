@@ -1,6 +1,6 @@
 # Sorting Algorithms Visualizer
 
-##Try it here!
+## Try it here!
 https://asaduakas.github.io/SortingVisualizer/
 
 ## Introduction
